@@ -338,21 +338,7 @@
     })();
   </script>
 
-  <script>
-    (function(){
-      var copyBtn = document.getElementById('copy-link');
-      if (copyBtn) {
-        copyBtn.addEventListener('click', function(e){
-          e.preventDefault();
-          var url = "https://script.google.com/macros/s/AKfycbxFKtdzaZTWqSOPUDDflilC5VYw5Sm_H7fr-M36ml-jXp58WAMe4xS65vKD8Xo00vXh/exec";
-          navigator.clipboard.writeText(url).then(function(){
-            copyBtn.textContent = 'Link copied!';
-            setTimeout(function(){ copyBtn.textContent = 'Copy shareable link'; }, 2000);
-          });
-        });
-      }
-    })();
-  </script>
+
 
 </body>
 </html>
